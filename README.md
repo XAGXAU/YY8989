@@ -1,5 +1,31 @@
 # 🙈 Peekaboo (Windows & Ubuntu Port)
 
+**让 AI 看懂你的屏幕，然后帮你操作电脑。**
+> Windows & Ubuntu 跨平台版本 | 原版 [openclaw/Peekaboo](https://github.com/openclaw/Peekaboo)（macOS/Swift）的 Python 移植
+ 
+---
+ 
+## 这是什么？
+ 
+Peekaboo-PY 是一个 **AI 屏幕自动化工具**。
+ 
+它能截取你的屏幕，把截图发给 AI（Claude、GPT、Gemini 或本地 Ollama），让 AI 分析屏幕内容，然后自动执行点击、输入、快捷键等操作。你只需要用一句自然语言描述任务，它就能帮你完成。
+ 
+原版由 [openclaw](https://github.com/openclaw) 用 Swift 开发，仅支持 macOS。本项目用 Python 完整重写，支持 **Windows 10+** 和 **Ubuntu 20.04+**。
+ 
+---
+ 
+## 能做什么？
+ 
+- 📸 截取全屏、指定窗口、或手动框选区域
+- 🤖 截图后让 AI 分析屏幕内容（"现在屏幕上有什么按钮？"）
+- 🖱️ 用自然语言点击元素（"点击提交按钮"）
+- ⌨️ 模拟键盘输入文字和快捷键
+- 🪟 列出、聚焦、调整应用窗口
+- 🧠 执行多步骤自动化任务（"打开 Firefox，访问 google.com"）
+- 🔌 作为 MCP 服务器接入 Claude Code、Cursor 等开发工具
+
+
 Cross-platform AI screen capture and GUI automation tool.
 **Ported from [openclaw/Peekaboo](https://github.com/openclaw/Peekaboo) (macOS/Swift) → Python (Windows + Ubuntu Desktop)**
 
