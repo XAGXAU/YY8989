@@ -1,0 +1,20 @@
+# Peekaboo - Cross-platform AI Screen Automation
+# Core dependencies (required)
+click>=8.0.0
+mss>=9.0.0
+Pillow>=10.0.0
+pyautogui>=0.9.54
+requests>=2.31.0
+
+# AI Providers (install at least one)
+anthropic>=0.40.0          # for --provider anthropic
+openai>=1.0.0              # for --provider openai
+google-generativeai>=0.8.0 # for --provider gemini
+# ollama runs locally, no package needed (uses requests)
+
+# Windows-specific
+pygetwindow>=0.0.9; sys_platform == "win32"
+
+# Linux-specific (install via apt, not pip):
+# sudo apt install xdotool wmctrl scrot
+# optional for area selection: sudo apt install slop
